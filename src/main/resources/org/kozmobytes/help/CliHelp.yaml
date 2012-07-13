@@ -1,0 +1,35 @@
+# Simple CLI Help File
+# By: Umer Mansoor <July 7, 2012>
+
+banner: |
+  Type 'help;' or '?' for help.
+  Type 'quit;' or 'exit;' to quit.
+  
+help: |
+  Getting around:
+  ?                Display this help.
+  help;            Display this help.
+  help <command>;  Display command-specific help.
+  exit;            Exit this utility.
+  quit;            Exit this utility.
+ 
+commands:
+  - name: CMD_HELP
+    help: |
+      help <command>;
+      Display the general help page with a list of available commands;
+      
+  - name: CMD_EXIT
+    help: |
+      exit;
+      Exit the CLI;
+     
+  - name: CMD_CONNECT
+    help: |
+      connect <hostname>/<port> (<username> '<password>')?;
+      Connect to the host on the specified port;
+      
+  - name: CMD_SHOW_VERSION
+    help: |
+      show version;
+      Display the current program version;
